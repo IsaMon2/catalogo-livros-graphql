@@ -1,0 +1,208 @@
+:root {
+  font-family: Arial, sans-serif;
+  color: #203044;
+  background: #f3f6fb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 1120px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+header {
+  margin-bottom: 28px;
+}
+
+header p {
+  color: #68768b;
+}
+
+.eyebrow {
+  letter-spacing: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #4e67b6;
+}
+
+h1 {
+  font-size: 36px;
+  margin: 5px 0;
+}
+
+h2 {
+  font-size: 21px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.stat,
+.panel {
+  background: white;
+  border: 1px solid #e5eaf2;
+  border-radius: 14px;
+  padding: 22px;
+}
+
+.stat strong {
+  display: block;
+  font-size: 29px;
+  color: #304f9c;
+  margin-bottom: 8px;
+}
+
+.stat span {
+  color: #64748b;
+  font-size: 13px;
+}
+
+.panel {
+  margin-bottom: 20px;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 2fr 1.4fr 1fr 1fr auto;
+  gap: 12px;
+  align-items: end;
+}
+
+.form label,
+.filters label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+input,
+select,
+button {
+  font: inherit;
+  padding: 11px;
+  border-radius: 8px;
+  border: 1px solid #cfd8e6;
+  min-width: 0;
+}
+
+button {
+  border: none;
+  background: #3758aa;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #27488d;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.filters {
+  display: flex;
+  gap: 12px;
+}
+
+.books {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 13px;
+  margin-top: 24px;
+}
+
+.book {
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 18px;
+  background: #fcfdff;
+}
+
+.book h3 {
+  margin-top: 0;
+}
+
+.book p {
+  color: #64748b;
+  font-size: 13px;
+}
+
+.book label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 13px;
+  font-size: 12px;
+}
+
+.book select {
+  width: 100%;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.actions button {
+  flex: 1;
+}
+
+.danger {
+  background: #b73d55;
+}
+
+.error {
+  background: #ffebef;
+  color: #9d243c;
+  padding: 13px;
+  margin-top: 16px;
+  border-radius: 8px;
+}
+
+.notice {
+  padding: 20px;
+  color: #64748b;
+}
+
+@media (max-width: 850px) {
+  .form {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .stats {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+
+  .filters {
+    flex-direction: column;
+    width: 100%;
+  }
+}

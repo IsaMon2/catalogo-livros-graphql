@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Catálogo de Livros</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="container">
+      <header>
+        <p class="eyebrow">BIBLIOTECA PESSOAL</p>
+        <h1>Meu Catálogo de Livros</h1>
+        <p>Organize seus livros e acompanhe suas leituras.</p>
+      </header>
+
+      <section id="stats" class="stats"></section>
+
+      <section class="panel">
+        <h2>Adicionar livro</h2>
+
+        <form id="form-book" class="form">
+          <label>
+            Título
+            <input name="title" required placeholder="Título do livro" />
+          </label>
+
+          <label>
+            Autor
+            <select name="authorId" id="author-select" required></select>
+          </label>
+
+          <label>
+            Ano
+            <input name="year" type="number" required min="1" />
+          </label>
+
+          <label>
+            Páginas
+            <input name="pages" type="number" required min="1" />
+          </label>
+
+          <button type="submit">Cadastrar livro</button>
+        </form>
+      </section>
+
+      <section class="panel">
+        <div class="heading">
+          <h2>Minha estante</h2>
+
+          <div class="filters">
+            <label>
+              Status
+              <select id="filter-status">
+                <option value="">Todos</option>
+                <option value="WANT_TO_READ">Quero ler</option>
+                <option value="READING">Lendo</option>
+                <option value="FINISHED">Lidos</option>
+              </select>
+            </label>
+
+            <label>
+              Buscar
+              <input id="search" placeholder="Pesquisar título" />
+            </label>
+          </div>
+        </div>
+
+        <div id="loading" class="notice" hidden>Carregando...</div>
+        <div id="error" class="error" role="alert" hidden></div>
+        <div id="books" class="books"></div>
+
+        <p id="empty" class="notice" hidden>Nenhum livro encontrado.</p>
+      </section>
+    </main>
+
+    <script src="main.js" type="module"></script>
+  </body>
+</html>
