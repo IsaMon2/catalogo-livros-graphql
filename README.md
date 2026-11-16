@@ -193,9 +193,12 @@ a nota deve estar entre 1 e 5.
 
 ---
 
-## 👩‍💻 Autora
+## 👩‍💻 Autores
 
-**Isabella Monsalles Barosa**
+**- Allana Aparecida Rizzo Ribeiro**
+**- Isabella Monsalles Barbosa**
+**- Joaquim Diglio**
+**- Maria Eduarda Torres**
 
 Projeto acadêmico desenvolvido para a disciplina de
 Programação Multiplataforma.
